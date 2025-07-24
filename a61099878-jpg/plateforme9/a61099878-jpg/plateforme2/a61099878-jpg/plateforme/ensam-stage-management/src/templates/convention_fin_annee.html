@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Convention de Stage de Fin d'Année</title>
+  <style>
+    body { 
+      font-family: Arial, sans-serif; 
+      line-height: 1.6; 
+      margin: 2cm; 
+      position: relative; 
+      color: #000;
+    }
+    h1, h2 { 
+      text-align: center; 
+      color: #1976d2;
+      font-weight: bold;
+    }
+    .header, .footer { 
+      text-align: center; 
+      font-size: 12px; 
+    }
+    .footer { 
+      position: fixed; 
+      bottom: 0; 
+      left: 0; 
+      right: 0; 
+      margin: 0 auto; 
+      background: #f0f7ff;
+      padding: 10px;
+      border-top: 2px solid #1976d2;
+    }
+    .article { 
+      margin-top: 20px; 
+    }
+    .table { 
+      width: 100%; 
+      border-collapse: collapse; 
+      margin-top: 10px; 
+    }
+    .table td { 
+      vertical-align: top; 
+      padding: 8px; 
+      border: 1px solid #ddd;
+    }
+    .signature-table, .evaluation-table, .criteria-table, .observations-table { 
+      width: 100%; 
+      border-collapse: collapse; 
+      margin-top: 20px; 
+    }
+    .criteria-table th, .criteria-table td, .evaluation-table td { 
+      border: 1px solid #000; 
+      text-align: center; 
+      padding: 6px; 
+    }
+    .criteria-table th {
+      background: #e3f2fd;
+      color: #1976d2;
+      font-weight: bold;
+    }
+    .evaluation-table td {
+      background: #f0f7ff;
+    }
+    .page-break { 
+      page-break-before: always; 
+    }
+    .logo-row { 
+      display: flex; 
+      justify-content: space-between; 
+      align-items: center; 
+      margin-bottom: 1cm; 
+      padding: 15px;
+      background: linear-gradient(135deg, #e3f2fd, #f0f7ff);
+      border-radius: 10px;
+      border: 2px solid #1976d2;
+    }
+    .logo { 
+      height: 60px; 
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .page-number { 
+      position: fixed; 
+      bottom: 0.5cm; 
+      right: 1cm; 
+      font-size: 10px; 
+      color: #666;
+    }
+    .year {
+      color: #1976d2;
+      font-weight: bold;
+    }
+    .student-name, .student-phone, .student-field {
+      color: #2e7d32;
+      font-weight: bold;
+    }
+    .today-date {
+      color: #7b1fa2;
+      font-weight: bold;
+    }
+    .article strong {
+      color: #1976d2;
+      font-size: 14px;
+    }
+    .table b {
+      color: #333;
+    }
+    .signature-table td {
+      text-align: center;
+      vertical-align: bottom;
+      padding: 10px;
+      background: #f0f7ff;
+      border: 2px solid #1976d2;
+    }
+    @media print {
+      body { 
+        margin: 1.5cm; 
+        -webkit-print-color-adjust: exact;
+      }
+      .logo-row {
+        background: #e3f2fd !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="logo-row">
+    <img src="/um5.png" alt="Logo UM5" class="logo">
+    <img src="/ensamrabat.png" alt="Logo ENSAM Rabat" class="logo">
+  </div>
+
+  <h1>CONVENTION DE STAGE<br>EN ENTREPRISE</h1>
+
+  <div class="article">
+    <strong>Article 1</strong><br>
+    La présente convention règle les rapports entre les trois partenaires : l'entreprise, l'ENSAM de Rabat et l'étudiant pour un Stage de fin d'année qui fait partie des modules du cycle d'Ingénieur ayant lieu du 01 Juillet au 31 Août <span class="year">2025</span>.
+  </div>
+
+  <div class="article">
+    <strong>Article 2</strong><br>
+    Les partenaires sont identifiés comme suit :
+    <table class="table">
+      <tr>
+        <td><b><u>Entreprise :</u></b></td>
+        <td><b><u>Étudiant :</u></b><br>Mr/Mlle <span class="student-name">{{studentNom}}</span></td>
+        <td><b><u>Établissement de formation :</u></b><br><b>ENSAM DE RABAT</b><br>Av des FAR BP 6207 Rabat<br>Instituts</td>
+      </tr>
+      <tr>
+        <td><u>Tél/fax</u></td>
+        <td><u>N° de téléphone</u><br><span class="student-phone">{{studentTelephone}}</span></td>
+        <td><u>Tél/fax</u><br>0537 564062 / 0537 564076</td>
+      </tr>
+      <tr>
+        <td><b><u>Représentée par : nom / fonction</u></b></td>
+        <td><b><u>Spécialité de la formation</u></b><br><span class="student-field">{{studentFiliere}}</span></td>
+        <td><b><u>Représenté par : nom / fonction</u></b></td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="article">
+    <strong>Article 3</strong><br>
+    Ce stage a pour objet essentiel de permettre à l'étudiant de mobiliser les connaissances acquises en formation, en les exploitant dans un contexte professionnel réel. Les contenus des activités demandées à l'étudiant font l'objet d'une concertation des partenaires et sont formalisés dans l'annexe pédagogique jointe à la présente convention.
+  </div>
+
+  <div class="article">
+    <strong>Article 4 - Durée et période du stage</strong><br>
+    Le stage de fin d'année a une durée de 6 à 8 semaines minimum et permet d'approfondir les connaissances techniques. L'étudiant participe activement aux projets concrets de l'entreprise.
+  </div>
+
+  <div class="article">
+    <strong>Article 5 - Encadrement</strong><br>
+    L'étudiant bénéficie d'un encadrement renforcé avec un maître de stage qualifié et un enseignant référent ENSAM qui assure le suivi technique et pédagogique.
+  </div>
+
+  <div class="article">
+    <strong>Article 6 - Obligations de l'étudiant</strong><br>
+    L'étudiant s'engage à faire preuve d'initiative et d'autonomie, à contribuer activement aux projets techniques, et à rédiger un rapport de qualité professionnelle.
+  </div>
+
+  <div class="article">
+    <strong>Article 7 - Obligations de l'entreprise</strong><br>
+    L'entreprise s'engage à confier des missions techniques adaptées, à fournir un environnement technique sécurisé, et à faciliter l'accès aux outils et documentations.
+  </div>
+
+  <div class="article">
+    <strong>Article 8 - Évaluation</strong><br>
+    L'évaluation se base sur un rapport technique détaillé, l'évaluation du maître de stage, et une soutenance devant jury avec questions techniques.
+  </div>
+
+  <div class="article">
+    <strong>Fait à Rabat le <span class="today-date">{{dateGeneration}}</span></strong>
+    <table class="signature-table">
+      <tr>
+        <td>Le représentant de l'entreprise :</td>
+        <td>L'étudiant stagiaire :</td>
+        <td>Le représentant de l'établissement de formation :</td>
+      </tr>
+      <tr><td colspan="3" style="height: 80px"></td></tr>
+    </table>
+  </div>
+
+  <div class="page-break"></div>
+
+  <div class="logo-row">
+    <img src="/um5.png" alt="Logo UM5" class="logo">
+    <img src="/ensamrabat.png" alt="Logo ENSAM Rabat" class="logo">
+  </div>
+
+  <h2>Fiche d'évaluation de stage – Ingénieur</h2>
+  <table class="evaluation-table">
+    <tr><td><strong>Nom de la société et ville</strong></td><td>_________________________________</td></tr>
+    <tr><td><strong>Nom du tuteur</strong></td><td>_________________________________</td></tr>
+    <tr><td><strong>Fonction / Service</strong></td><td>_________________________________</td></tr>
+    <tr><td><strong>Nom du stagiaire</strong></td><td><span class="student-name">{{studentNom}}</span></td></tr>
+    <tr><td><strong>Spécialité</strong></td><td><span class="student-field">{{studentFiliere}}</span></td></tr>
+    <tr><td><strong>Période du stage</strong></td><td>01 Juillet au 31 Août 2025</td></tr>
+  </table>
+
+  <div class="article">
+    <strong>Critères d'évaluation</strong>
+    <table class="criteria-table">
+      <thead>
+        <tr><th>Critères d'évaluation</th><th>Faible</th><th>Moyen</th><th>Bien</th><th>Très bien</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Ponctualité - assiduité</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td></tr>
+        <tr><td>Intégration aux équipes</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td></tr>
+        <tr><td>Esprit d'initiative et engagement</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td></tr>
+        <tr><td>Compétences techniques</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td></tr>
+        <tr><td>Communication</td><td>☐</td><td>☐</td><td>☐</td><td>☐</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="article">
+    <strong>Observations :</strong>
+    <table class="observations-table">
+      <tr><td style="border-bottom: 1px solid #000; height: 25px; background: #f0f7ff;">_________________________________________________________________</td></tr>
+      <tr><td style="border-bottom: 1px solid #000; height: 25px; background: #f0f7ff;">_________________________________________________________________</td></tr>
+      <tr><td style="border-bottom: 1px solid #000; height: 25px; background: #f0f7ff;">_________________________________________________________________</td></tr>
+      <tr><td style="border-bottom: 1px solid #000; height: 25px; background: #f0f7ff;">_________________________________________________________________</td></tr>
+    </table>
+  </div>
+
+  <div class="article">
+    Fait à ____________________________________ le ______________________________<br>
+    <strong>Visa du responsable du stage</strong>
+  </div>
+
+  <div class="footer">
+    <strong>ENSAM-Rabat</strong>, B.P. : 6207 Av. Armée Royale, Madinat Al Irfane Rabat – Maroc<br>
+    Tél. : (212) (0) 537 56 40 62 &nbsp;&nbsp;&nbsp;&nbsp; Fax : (212) (0) 37 56 40 76
+  </div>
+  <div class="page-number">Page <span class="pageNumber">1</span></div>
+</body>
+</html>
